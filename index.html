@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Botón de Llamada</title>
+    <style>
+        body {
+            font-family: 'Avenir', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ac002e; /* Color Pantone AC002E */
+            margin: 0;
+        }
+        .container {
+            background-color: white; /* Cuadro blanco */
+            padding: 60px; /* Aumenta el padding */
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        .logo {
+            width: 150px; /* Tamaño del logo */
+            height: auto;
+            margin-bottom: 30px; /* Aumenta el margen entre el logo y el botón */
+        }
+        .boton {
+            background-color: white; /* Fondo del botón */
+            color: #ac002e; /* Texto del botón en color Pantone */
+            padding: 15px 30px;
+            border: 2px solid black; /* Contorno negro */
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none; /* Quitar subrayado en enlaces */
+            display: inline-block;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        .boton:hover {
+            background-color: #ac002e; /* Fondo cambia al color Pantone al pasar el mouse */
+            color: white; /* Texto cambia a blanco al pasar el mouse */
+            border-color: white; /* Contorno cambia a blanco al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://github.com/EquifaxEc/CallCenter/blob/main/348962744_199497756355232_684021686607117591_n.png?raw=true" alt="Logo" class="logo">
+        <p><!-- Aquí puedes agregar la dirección del logo --></p>
+        <a href="tel:024011800" class="boton">¡Llama Ahora!</a>
+    </div>
+</body>
+</html>
